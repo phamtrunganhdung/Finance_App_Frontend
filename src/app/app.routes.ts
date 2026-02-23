@@ -8,7 +8,7 @@ export const routes: Routes = [
   },
   {
     path: 'home',
-    loadComponent: () => import('../features/home/home.component').then((m) => m.HomeComponent),
+    loadComponent: () => import('./features/home/home.component').then((m) => m.HomeComponent),
     children: [
       {
         path: '',
@@ -18,19 +18,19 @@ export const routes: Routes = [
       {
         path: 'dashboard',
         loadComponent: () =>
-          import('../features/dashboard/dashboard.component').then((m) => m.DashboardComponent),
+          import('./features/dashboard/dashboard.component').then((m) => m.DashboardComponent),
       },
       {
         path: 'transactions',
         loadComponent: () =>
-          import('../features/transactions-list/transactions-list.component').then(
+          import('./features/transactions-list/transactions-list.component').then(
             (m) => m.TransactionsListComponent,
           ),
       },
       {
         path: 'reports',
         loadComponent: () =>
-          import('../features/report/reports.component').then((m) => m.ReportsComponent),
+          import('./features/report/reports.component').then((m) => m.ReportsComponent),
       },
     ],
   },
