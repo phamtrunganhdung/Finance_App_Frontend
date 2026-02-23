@@ -1,0 +1,32 @@
+<div class="app-container">
+  <aside class="sidebar">
+    <div class="brand">
+      <h2>Finance</h2>
+    </div>
+    <nav class="nav-menu">
+      <a routerLink="dashboard" routerLinkActive="active" class="nav-item">
+        <span class="icon">📊</span>
+        <span>Dashboard</span>
+      </a>
+      <a routerLink="transactions" routerLinkActive="active" class="nav-item">
+        <span class="icon">💳</span>
+        <span>Transactions</span>
+      </a>
+      <a routerLink="reports" routerLinkActive="active" class="nav-item">
+        <span class="icon">📈</span>
+        <span>Reports</span>
+      </a>
+    </nav>
+  </aside>
+  <main class="main-content">
+    <header class="top-bar">
+      <h1>Overview</h1>
+      <div class="user-profile">
+        <span class="avatar">U</span>
+      </div>
+    </header>
+    <div class="page-content">
+      <router-outlet></router-outlet>
+    </div>
+  </main>
+</div>

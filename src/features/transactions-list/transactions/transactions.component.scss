@@ -1,0 +1,18 @@
+:host {
+  @apply block font-sans;
+}
+
+input[type='date']::-webkit-calendar-picker-indicator {
+  @apply cursor-pointer invert-[0.4] hover:invert-[0.2];
+}
+
+textarea:focus {
+  @apply bg-[#fcfcfd];
+}
+
+textarea::-webkit-scrollbar {
+  width: 6px;
+}
+textarea::-webkit-scrollbar-thumb {
+  @apply bg-slate-200 rounded-[10px];
+}

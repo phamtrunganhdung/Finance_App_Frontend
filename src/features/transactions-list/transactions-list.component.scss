@@ -1,0 +1,27 @@
+.transaction-list {
+  @apply bg-white rounded-xl p-4;
+}
+.transactions-header {
+  @apply flex justify-between items-center mb-4;
+}
+.transaction-item {
+  @apply flex justify-between items-center p-4 border-b border-gray-100 last:border-b-0;
+}
+.info {
+  @apply flex flex-col;
+}
+.name {
+  @apply font-semibold text-gray-900;
+}
+.date {
+  @apply text-sm text-gray-400;
+}
+.amount {
+  @apply font-semibold;
+}
+.positive {
+  @apply text-emerald-500;
+}
+.negative {
+  @apply text-gray-900;
+}
